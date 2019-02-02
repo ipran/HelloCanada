@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DE521222205EF5500CD70AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE521212205EF5500CD70AB /* AppDelegate.swift */; };
+		3DE521242205EF5500CD70AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE521232205EF5500CD70AB /* ViewController.swift */; };
+		3DE521272205EF5500CD70AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE521252205EF5500CD70AB /* Main.storyboard */; };
+		3DE521292205EF5700CD70AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE521282205EF5700CD70AB /* Assets.xcassets */; };
+		3DE5212C2205EF5700CD70AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE5212A2205EF5700CD70AB /* LaunchScreen.storyboard */; };
+		3DE521372205EF5700CD70AB /* HelloCanadaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE521362205EF5700CD70AB /* HelloCanadaTests.swift */; };
+		3DE521422205EF5700CD70AB /* HelloCanadaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE521412205EF5700CD70AB /* HelloCanadaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DE521332205EF5700CD70AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DE521162205EF5500CD70AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DE5211D2205EF5500CD70AB;
+			remoteInfo = HelloCanada;
+		};
+		3DE5213E2205EF5700CD70AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DE521162205EF5500CD70AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DE5211D2205EF5500CD70AB;
+			remoteInfo = HelloCanada;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DE5211E2205EF5500CD70AB /* HelloCanada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCanada.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE521212205EF5500CD70AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DE521232205EF5500CD70AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DE521262205EF5500CD70AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DE521282205EF5700CD70AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DE5212B2205EF5700CD70AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DE5212D2205EF5700CD70AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE521322205EF5700CD70AB /* HelloCanadaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloCanadaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE521362205EF5700CD70AB /* HelloCanadaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCanadaTests.swift; sourceTree = "<group>"; };
+		3DE521382205EF5700CD70AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE5213D2205EF5700CD70AB /* HelloCanadaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloCanadaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE521412205EF5700CD70AB /* HelloCanadaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCanadaUITests.swift; sourceTree = "<group>"; };
+		3DE521432205EF5700CD70AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DE5211B2205EF5500CD70AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE5212F2205EF5700CD70AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE5213A2205EF5700CD70AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DE521152205EF5500CD70AB = {
+			isa = PBXGroup;
+			children = (
+				3DE521202205EF5500CD70AB /* HelloCanada */,
+				3DE521352205EF5700CD70AB /* HelloCanadaTests */,
+				3DE521402205EF5700CD70AB /* HelloCanadaUITests */,
+				3DE5211F2205EF5500CD70AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DE5211F2205EF5500CD70AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DE5211E2205EF5500CD70AB /* HelloCanada.app */,
+				3DE521322205EF5700CD70AB /* HelloCanadaTests.xctest */,
+				3DE5213D2205EF5700CD70AB /* HelloCanadaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DE521202205EF5500CD70AB /* HelloCanada */ = {
+			isa = PBXGroup;
+			children = (
+				3DE521212205EF5500CD70AB /* AppDelegate.swift */,
+				3DE521232205EF5500CD70AB /* ViewController.swift */,
+				3DE521252205EF5500CD70AB /* Main.storyboard */,
+				3DE521282205EF5700CD70AB /* Assets.xcassets */,
+				3DE5212A2205EF5700CD70AB /* LaunchScreen.storyboard */,
+				3DE5212D2205EF5700CD70AB /* Info.plist */,
+			);
+			path = HelloCanada;
+			sourceTree = "<group>";
+		};
+		3DE521352205EF5700CD70AB /* HelloCanadaTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DE521362205EF5700CD70AB /* HelloCanadaTests.swift */,
+				3DE521382205EF5700CD70AB /* Info.plist */,
+			);
+			path = HelloCanadaTests;
+			sourceTree = "<group>";
+		};
+		3DE521402205EF5700CD70AB /* HelloCanadaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3DE521412205EF5700CD70AB /* HelloCanadaUITests.swift */,
+				3DE521432205EF5700CD70AB /* Info.plist */,
+			);
+			path = HelloCanadaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DE5211D2205EF5500CD70AB /* HelloCanada */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DE521462205EF5700CD70AB /* Build configuration list for PBXNativeTarget "HelloCanada" */;
+			buildPhases = (
+				3DE5211A2205EF5500CD70AB /* Sources */,
+				3DE5211B2205EF5500CD70AB /* Frameworks */,
+				3DE5211C2205EF5500CD70AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloCanada;
+			productName = HelloCanada;
+			productReference = 3DE5211E2205EF5500CD70AB /* HelloCanada.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DE521312205EF5700CD70AB /* HelloCanadaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DE521492205EF5700CD70AB /* Build configuration list for PBXNativeTarget "HelloCanadaTests" */;
+			buildPhases = (
+				3DE5212E2205EF5700CD70AB /* Sources */,
+				3DE5212F2205EF5700CD70AB /* Frameworks */,
+				3DE521302205EF5700CD70AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DE521342205EF5700CD70AB /* PBXTargetDependency */,
+			);
+			name = HelloCanadaTests;
+			productName = HelloCanadaTests;
+			productReference = 3DE521322205EF5700CD70AB /* HelloCanadaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DE5213C2205EF5700CD70AB /* HelloCanadaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DE5214C2205EF5700CD70AB /* Build configuration list for PBXNativeTarget "HelloCanadaUITests" */;
+			buildPhases = (
+				3DE521392205EF5700CD70AB /* Sources */,
+				3DE5213A2205EF5700CD70AB /* Frameworks */,
+				3DE5213B2205EF5700CD70AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DE5213F2205EF5700CD70AB /* PBXTargetDependency */,
+			);
+			name = HelloCanadaUITests;
+			productName = HelloCanadaUITests;
+			productReference = 3DE5213D2205EF5700CD70AB /* HelloCanadaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DE521162205EF5500CD70AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = pranil;
+				TargetAttributes = {
+					3DE5211D2205EF5500CD70AB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3DE521312205EF5700CD70AB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3DE5211D2205EF5500CD70AB;
+					};
+					3DE5213C2205EF5700CD70AB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3DE5211D2205EF5500CD70AB;
+					};
+				};
+			};
+			buildConfigurationList = 3DE521192205EF5500CD70AB /* Build configuration list for PBXProject "HelloCanada" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DE521152205EF5500CD70AB;
+			productRefGroup = 3DE5211F2205EF5500CD70AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DE5211D2205EF5500CD70AB /* HelloCanada */,
+				3DE521312205EF5700CD70AB /* HelloCanadaTests */,
+				3DE5213C2205EF5700CD70AB /* HelloCanadaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DE5211C2205EF5500CD70AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE5212C2205EF5700CD70AB /* LaunchScreen.storyboard in Resources */,
+				3DE521292205EF5700CD70AB /* Assets.xcassets in Resources */,
+				3DE521272205EF5500CD70AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE521302205EF5700CD70AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE5213B2205EF5700CD70AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DE5211A2205EF5500CD70AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE521242205EF5500CD70AB /* ViewController.swift in Sources */,
+				3DE521222205EF5500CD70AB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE5212E2205EF5700CD70AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE521372205EF5700CD70AB /* HelloCanadaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE521392205EF5700CD70AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE521422205EF5700CD70AB /* HelloCanadaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DE521342205EF5700CD70AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DE5211D2205EF5500CD70AB /* HelloCanada */;
+			targetProxy = 3DE521332205EF5700CD70AB /* PBXContainerItemProxy */;
+		};
+		3DE5213F2205EF5700CD70AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DE5211D2205EF5500CD70AB /* HelloCanada */;
+			targetProxy = 3DE5213E2205EF5700CD70AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DE521252205EF5500CD70AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DE521262205EF5500CD70AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DE5212A2205EF5700CD70AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DE5212B2205EF5700CD70AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DE521442205EF5700CD70AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DE521452205EF5700CD70AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DE521472205EF5700CD70AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C94P4T4MCM;
+				INFOPLIST_FILE = HelloCanada/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iPran.HelloCanada;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DE521482205EF5700CD70AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C94P4T4MCM;
+				INFOPLIST_FILE = HelloCanada/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iPran.HelloCanada;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3DE5214A2205EF5700CD70AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C94P4T4MCM;
+				INFOPLIST_FILE = HelloCanadaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iPran.HelloCanadaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloCanada.app/HelloCanada";
+			};
+			name = Debug;
+		};
+		3DE5214B2205EF5700CD70AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C94P4T4MCM;
+				INFOPLIST_FILE = HelloCanadaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iPran.HelloCanadaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloCanada.app/HelloCanada";
+			};
+			name = Release;
+		};
+		3DE5214D2205EF5700CD70AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C94P4T4MCM;
+				INFOPLIST_FILE = HelloCanadaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iPran.HelloCanadaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HelloCanada;
+			};
+			name = Debug;
+		};
+		3DE5214E2205EF5700CD70AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C94P4T4MCM;
+				INFOPLIST_FILE = HelloCanadaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iPran.HelloCanadaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HelloCanada;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DE521192205EF5500CD70AB /* Build configuration list for PBXProject "HelloCanada" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE521442205EF5700CD70AB /* Debug */,
+				3DE521452205EF5700CD70AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DE521462205EF5700CD70AB /* Build configuration list for PBXNativeTarget "HelloCanada" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE521472205EF5700CD70AB /* Debug */,
+				3DE521482205EF5700CD70AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DE521492205EF5700CD70AB /* Build configuration list for PBXNativeTarget "HelloCanadaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE5214A2205EF5700CD70AB /* Debug */,
+				3DE5214B2205EF5700CD70AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DE5214C2205EF5700CD70AB /* Build configuration list for PBXNativeTarget "HelloCanadaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE5214D2205EF5700CD70AB /* Debug */,
+				3DE5214E2205EF5700CD70AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DE521162205EF5500CD70AB /* Project object */;
+}
