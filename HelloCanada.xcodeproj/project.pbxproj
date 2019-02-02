@@ -14,6 +14,9 @@
 		3DE5212C2205EF5700CD70AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE5212A2205EF5700CD70AB /* LaunchScreen.storyboard */; };
 		3DE521372205EF5700CD70AB /* HelloCanadaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE521362205EF5700CD70AB /* HelloCanadaTests.swift */; };
 		3DE521422205EF5700CD70AB /* HelloCanadaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE521412205EF5700CD70AB /* HelloCanadaUITests.swift */; };
+		46B762E88F46A8E93993F8E5 /* Pods_HelloCanada.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B6C864A53F9DE7ACD4BC5DA /* Pods_HelloCanada.framework */; };
+		52694E02229A38EAC4E4369B /* Pods_HelloCanadaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F20F8112AF723C617D3250D /* Pods_HelloCanadaUITests.framework */; };
+		B9CE146F8ADCCA71162407AB /* Pods_HelloCanadaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C11FAA83E58B4C7D632F5C8 /* Pods_HelloCanadaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0695D92E2AB9436431710D2A /* Pods-HelloCanadaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCanadaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloCanadaUITests/Pods-HelloCanadaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1C11FAA83E58B4C7D632F5C8 /* Pods_HelloCanadaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloCanadaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F20F8112AF723C617D3250D /* Pods_HelloCanadaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloCanadaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		228F9E7D8BB0C0CF456C3B36 /* Pods-HelloCanadaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCanadaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloCanadaUITests/Pods-HelloCanadaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B6C864A53F9DE7ACD4BC5DA /* Pods_HelloCanada.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloCanada.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE5211E2205EF5500CD70AB /* HelloCanada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCanada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE521212205EF5500CD70AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE521232205EF5500CD70AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,10 @@
 		3DE5213D2205EF5700CD70AB /* HelloCanadaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloCanadaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE521412205EF5700CD70AB /* HelloCanadaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCanadaUITests.swift; sourceTree = "<group>"; };
 		3DE521432205EF5700CD70AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C40BC4B14B99EF881292341 /* Pods-HelloCanada.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCanada.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloCanada/Pods-HelloCanada.release.xcconfig"; sourceTree = "<group>"; };
+		653C99C4B5D2A80FB239EBC2 /* Pods-HelloCanadaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCanadaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloCanadaTests/Pods-HelloCanadaTests.release.xcconfig"; sourceTree = "<group>"; };
+		8807E55822E249197F8CDCB2 /* Pods-HelloCanadaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCanadaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloCanadaTests/Pods-HelloCanadaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A13C5B9930A1660D898C46AF /* Pods-HelloCanada.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCanada.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloCanada/Pods-HelloCanada.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B762E88F46A8E93993F8E5 /* Pods_HelloCanada.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9CE146F8ADCCA71162407AB /* Pods_HelloCanadaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52694E02229A38EAC4E4369B /* Pods_HelloCanadaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				3DE521352205EF5700CD70AB /* HelloCanadaTests */,
 				3DE521402205EF5700CD70AB /* HelloCanadaUITests */,
 				3DE5211F2205EF5500CD70AB /* Products */,
+				DDD19609635C3E3721BC898F /* Pods */,
+				9F1B9107460410E1F3CCF585 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = HelloCanadaUITests;
 			sourceTree = "<group>";
 		};
+		9F1B9107460410E1F3CCF585 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B6C864A53F9DE7ACD4BC5DA /* Pods_HelloCanada.framework */,
+				1C11FAA83E58B4C7D632F5C8 /* Pods_HelloCanadaTests.framework */,
+				1F20F8112AF723C617D3250D /* Pods_HelloCanadaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDD19609635C3E3721BC898F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A13C5B9930A1660D898C46AF /* Pods-HelloCanada.debug.xcconfig */,
+				4C40BC4B14B99EF881292341 /* Pods-HelloCanada.release.xcconfig */,
+				8807E55822E249197F8CDCB2 /* Pods-HelloCanadaTests.debug.xcconfig */,
+				653C99C4B5D2A80FB239EBC2 /* Pods-HelloCanadaTests.release.xcconfig */,
+				228F9E7D8BB0C0CF456C3B36 /* Pods-HelloCanadaUITests.debug.xcconfig */,
+				0695D92E2AB9436431710D2A /* Pods-HelloCanadaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DE521462205EF5700CD70AB /* Build configuration list for PBXNativeTarget "HelloCanada" */;
 			buildPhases = (
+				94936FDDE64F4C7438D5364B /* [CP] Check Pods Manifest.lock */,
 				3DE5211A2205EF5500CD70AB /* Sources */,
 				3DE5211B2205EF5500CD70AB /* Frameworks */,
 				3DE5211C2205EF5500CD70AB /* Resources */,
+				02EC75C4A6A01F6B6A48A1D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DE521492205EF5700CD70AB /* Build configuration list for PBXNativeTarget "HelloCanadaTests" */;
 			buildPhases = (
+				87F5BEC05849BC2ADC8E25A4 /* [CP] Check Pods Manifest.lock */,
 				3DE5212E2205EF5700CD70AB /* Sources */,
 				3DE5212F2205EF5700CD70AB /* Frameworks */,
 				3DE521302205EF5700CD70AB /* Resources */,
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DE5214C2205EF5700CD70AB /* Build configuration list for PBXNativeTarget "HelloCanadaUITests" */;
 			buildPhases = (
+				33DC8E1147183D1021986014 /* [CP] Check Pods Manifest.lock */,
 				3DE521392205EF5700CD70AB /* Sources */,
 				3DE5213A2205EF5700CD70AB /* Frameworks */,
 				3DE5213B2205EF5700CD70AB /* Resources */,
@@ -250,6 +294,85 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02EC75C4A6A01F6B6A48A1D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HelloCanada/Pods-HelloCanada-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/UIActivityIndicator-for-SDWebImage/UIActivityIndicator_for_SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIActivityIndicator_for_SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloCanada/Pods-HelloCanada-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33DC8E1147183D1021986014 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloCanadaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87F5BEC05849BC2ADC8E25A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloCanadaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94936FDDE64F4C7438D5364B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloCanada-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DE5211A2205EF5500CD70AB /* Sources */ = {
@@ -430,6 +553,7 @@
 		};
 		3DE521472205EF5700CD70AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A13C5B9930A1660D898C46AF /* Pods-HelloCanada.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +572,7 @@
 		};
 		3DE521482205EF5700CD70AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C40BC4B14B99EF881292341 /* Pods-HelloCanada.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +591,7 @@
 		};
 		3DE5214A2205EF5700CD70AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8807E55822E249197F8CDCB2 /* Pods-HelloCanadaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +613,7 @@
 		};
 		3DE5214B2205EF5700CD70AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 653C99C4B5D2A80FB239EBC2 /* Pods-HelloCanadaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +635,7 @@
 		};
 		3DE5214D2205EF5700CD70AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 228F9E7D8BB0C0CF456C3B36 /* Pods-HelloCanadaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +656,7 @@
 		};
 		3DE5214E2205EF5700CD70AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0695D92E2AB9436431710D2A /* Pods-HelloCanadaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
