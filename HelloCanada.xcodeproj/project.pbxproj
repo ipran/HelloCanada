@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D1948482206901000F8184A /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1948472206901000F8184A /* UITableViewCell.swift */; };
+		3D19484A2206914200F8184A /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1948492206914200F8184A /* UICollectionViewCell.swift */; };
+		3D19484C220692DA00F8184A /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19484B220692DA00F8184A /* URLRequest.swift */; };
+		3D1948502206AD8600F8184A /* AboutCanadaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19484F2206AD8600F8184A /* AboutCanadaResponse.swift */; };
+		3D1948542206B0B600F8184A /* AboutCanada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1948532206B0B600F8184A /* AboutCanada.swift */; };
+		3D1948572206B24100F8184A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1948562206B24100F8184A /* Endpoint.swift */; };
+		3D1948592206C8B400F8184A /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1948582206C8B400F8184A /* APIResponse.swift */; };
+		3D19485C2206CB2C00F8184A /* BaseAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19485B2206CB2C00F8184A /* BaseAPIManager.swift */; };
+		3D19485E2206CB5C00F8184A /* HelloCanadaAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19485D2206CB5C00F8184A /* HelloCanadaAPIManager.swift */; };
 		3DE521222205EF5500CD70AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE521212205EF5500CD70AB /* AppDelegate.swift */; };
-		3DE521242205EF5500CD70AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE521232205EF5500CD70AB /* ViewController.swift */; };
+		3DE521242205EF5500CD70AB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE521232205EF5500CD70AB /* HomeViewController.swift */; };
 		3DE521272205EF5500CD70AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE521252205EF5500CD70AB /* Main.storyboard */; };
 		3DE521292205EF5700CD70AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE521282205EF5700CD70AB /* Assets.xcassets */; };
 		3DE5212C2205EF5700CD70AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE5212A2205EF5700CD70AB /* LaunchScreen.storyboard */; };
@@ -42,9 +51,18 @@
 		1F20F8112AF723C617D3250D /* Pods_HelloCanadaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloCanadaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		228F9E7D8BB0C0CF456C3B36 /* Pods-HelloCanadaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCanadaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloCanadaUITests/Pods-HelloCanadaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B6C864A53F9DE7ACD4BC5DA /* Pods_HelloCanada.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloCanada.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D1948472206901000F8184A /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		3D1948492206914200F8184A /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
+		3D19484B220692DA00F8184A /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		3D19484F2206AD8600F8184A /* AboutCanadaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCanadaResponse.swift; sourceTree = "<group>"; };
+		3D1948532206B0B600F8184A /* AboutCanada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCanada.swift; sourceTree = "<group>"; };
+		3D1948562206B24100F8184A /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		3D1948582206C8B400F8184A /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		3D19485B2206CB2C00F8184A /* BaseAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIManager.swift; sourceTree = "<group>"; };
+		3D19485D2206CB5C00F8184A /* HelloCanadaAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCanadaAPIManager.swift; sourceTree = "<group>"; };
 		3DE5211E2205EF5500CD70AB /* HelloCanada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCanada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE521212205EF5500CD70AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DE521232205EF5500CD70AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DE521232205EF5500CD70AB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3DE521262205EF5500CD70AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DE521282205EF5700CD70AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DE5212B2205EF5700CD70AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,6 +107,131 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D19483D2206874300F8184A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3DE521212205EF5500CD70AB /* AppDelegate.swift */,
+				3D19484D2206ACF600F8184A /* Backend */,
+				3D1948422206886200F8184A /* Home */,
+				3D1948412206885700F8184A /* Common */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3D19483E2206876200F8184A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3D1948402206878D00F8184A /* Stoyboard */,
+				3D19483F2206878300F8184A /* Assets */,
+				3DE5212D2205EF5700CD70AB /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3D19483F2206878300F8184A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3DE521282205EF5700CD70AB /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3D1948402206878D00F8184A /* Stoyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3DE521252205EF5500CD70AB /* Main.storyboard */,
+				3DE5212A2205EF5700CD70AB /* LaunchScreen.storyboard */,
+			);
+			path = Stoyboard;
+			sourceTree = "<group>";
+		};
+		3D1948412206885700F8184A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3D19484622068C4A00F8184A /* Extension */,
+				3D19484322068B8D00F8184A /* Util */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3D1948422206886200F8184A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3D1948522206B08500F8184A /* Entity */,
+				3D1948512206B07C00F8184A /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3D19484322068B8D00F8184A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		3D19484622068C4A00F8184A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3D1948472206901000F8184A /* UITableViewCell.swift */,
+				3D1948492206914200F8184A /* UICollectionViewCell.swift */,
+				3D19484B220692DA00F8184A /* URLRequest.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3D19484D2206ACF600F8184A /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				3D19485A2206C91F00F8184A /* Manager */,
+				3D1948552206B22C00F8184A /* Common */,
+				3D19484E2206AD3200F8184A /* APIResponse */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		3D19484E2206AD3200F8184A /* APIResponse */ = {
+			isa = PBXGroup;
+			children = (
+				3D19484F2206AD8600F8184A /* AboutCanadaResponse.swift */,
+			);
+			path = APIResponse;
+			sourceTree = "<group>";
+		};
+		3D1948512206B07C00F8184A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3DE521232205EF5500CD70AB /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3D1948522206B08500F8184A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				3D1948532206B0B600F8184A /* AboutCanada.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		3D1948552206B22C00F8184A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3D1948562206B24100F8184A /* Endpoint.swift */,
+				3D1948582206C8B400F8184A /* APIResponse.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3D19485A2206C91F00F8184A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3D19485B2206CB2C00F8184A /* BaseAPIManager.swift */,
+				3D19485D2206CB5C00F8184A /* HelloCanadaAPIManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		3DE521152205EF5500CD70AB = {
 			isa = PBXGroup;
 			children = (
@@ -114,12 +257,8 @@
 		3DE521202205EF5500CD70AB /* HelloCanada */ = {
 			isa = PBXGroup;
 			children = (
-				3DE521212205EF5500CD70AB /* AppDelegate.swift */,
-				3DE521232205EF5500CD70AB /* ViewController.swift */,
-				3DE521252205EF5500CD70AB /* Main.storyboard */,
-				3DE521282205EF5700CD70AB /* Assets.xcassets */,
-				3DE5212A2205EF5700CD70AB /* LaunchScreen.storyboard */,
-				3DE5212D2205EF5700CD70AB /* Info.plist */,
+				3D19483D2206874300F8184A /* Source */,
+				3D19483E2206876200F8184A /* Resource */,
 			);
 			path = HelloCanada;
 			sourceTree = "<group>";
@@ -379,8 +518,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DE521242205EF5500CD70AB /* ViewController.swift in Sources */,
+				3D19485C2206CB2C00F8184A /* BaseAPIManager.swift in Sources */,
+				3DE521242205EF5500CD70AB /* HomeViewController.swift in Sources */,
+				3D1948572206B24100F8184A /* Endpoint.swift in Sources */,
+				3D1948482206901000F8184A /* UITableViewCell.swift in Sources */,
+				3D1948592206C8B400F8184A /* APIResponse.swift in Sources */,
+				3D19484A2206914200F8184A /* UICollectionViewCell.swift in Sources */,
+				3D19484C220692DA00F8184A /* URLRequest.swift in Sources */,
 				3DE521222205EF5500CD70AB /* AppDelegate.swift in Sources */,
+				3D1948502206AD8600F8184A /* AboutCanadaResponse.swift in Sources */,
+				3D1948542206B0B600F8184A /* AboutCanada.swift in Sources */,
+				3D19485E2206CB5C00F8184A /* HelloCanadaAPIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,7 +706,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C94P4T4MCM;
-				INFOPLIST_FILE = HelloCanada/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HelloCanada/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -577,7 +725,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C94P4T4MCM;
-				INFOPLIST_FILE = HelloCanada/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HelloCanada/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

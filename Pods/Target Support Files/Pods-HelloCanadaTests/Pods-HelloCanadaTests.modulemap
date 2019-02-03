@@ -1,0 +1,6 @@
+framework module Pods_HelloCanadaTests {
+  umbrella header "Pods-HelloCanadaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
