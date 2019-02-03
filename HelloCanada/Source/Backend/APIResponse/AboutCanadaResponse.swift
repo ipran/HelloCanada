@@ -8,3 +8,7 @@
 
 import Foundation
 
+struct AboutCanadaResponse: Decodable {
+    let title : String?
+    let rows: [AboutCanada]?
+}
