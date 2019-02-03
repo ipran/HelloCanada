@@ -8,4 +8,7 @@
 
 import Foundation
 
-
+enum APIResponse<T,U> where U: Error {
+    case success(T)
+    case failiure(U)
+}
