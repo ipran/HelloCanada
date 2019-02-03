@@ -10,6 +10,7 @@ import Foundation
 
 protocol EndPoint {
     var base: String { get }
+//    var path: String { get }
     var method: HTTPMethod {get}
 }
 
@@ -21,6 +22,7 @@ extension EndPoint {
 
     var urlComponents: URLComponents {
         var components = URLComponents(string: base)!
+//        components.path = path
         components.query = apiKey
         return components
     }
@@ -29,7 +31,6 @@ extension EndPoint {
         let url = urlComponents.url!
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
-
         return request
     }
 }
@@ -47,5 +48,13 @@ extension AboutCanadaFeed: EndPoint {
     var base: String {
         return "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"
     }
+
+//    var path: String {
+//        switch self {
+//
+//        case .aboutCanada:
+//            return ""
+//        }
+//    }
 }
 

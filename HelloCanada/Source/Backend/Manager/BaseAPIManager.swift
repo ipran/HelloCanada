@@ -37,7 +37,7 @@ extension BaseAPIManager {
 
     typealias JSONTaskCompletionHandler = (Decodable?, APIError?) -> Void
 
-    func fetch<T: Decodable>(with request: URLRequest, decodingType: T.Type, completion: @escaping JSONTaskCompletionHandler) {
+    func fetch<T: Decodable>(with request: URLRequest, decode: @escaping (Decodable) -> T?, completion: @escaping (APIResponse<T, APIError>) -> Void) {
 
         // Send Request
         Alamofire.request(request.url!, parameters: [String: Any](), encoding: JSONEncoding.default).validate().responseJSON { response in
@@ -49,18 +49,22 @@ extension BaseAPIManager {
 
                 if let data = response.data {
                     do {
-                        let genericModel = try JSONDecoder().decode(decodingType, from: data)
-                        completion(genericModel, nil)
-                    } catch {
-                        completion(nil, .jsonConversionFailure)
+
+                        let genericModel = try JSONDecoder().decode(T.self, from: data)
+                        completion(.success(genericModel))
                     }
+                    catch {
+
+                        completion(APIResponse.failiure(APIError.jsonParsingFailure))
+                    }
+
                 } else {
-                    completion(nil, .invalidData)
+                    completion(APIResponse.failiure(APIError.jsonConversionFailure))
                 }
 
             case .failure:
 
-                completion(nil, .requestFailed)
+                completion(APIResponse.failiure(APIError.requestFailed))
                 return
             }
 
