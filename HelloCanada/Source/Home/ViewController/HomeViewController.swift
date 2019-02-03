@@ -10,11 +10,24 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    // Declarations
+    var tableView: UITableView?
+
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        setUpView()
     }
 
+    func setUpView() {
+        setUpTableView()
+    }
+
+    func setUpTableView() {
+        tableView?.delegate = self as! UITableViewDelegate
+        tableView?.dataSource = self as! UITableViewDataSource
+    }
 
 }
 

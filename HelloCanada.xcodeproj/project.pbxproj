@@ -16,6 +16,7 @@
 		3D1948592206C8B400F8184A /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1948582206C8B400F8184A /* APIResponse.swift */; };
 		3D19485C2206CB2C00F8184A /* BaseAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19485B2206CB2C00F8184A /* BaseAPIManager.swift */; };
 		3D19485E2206CB5C00F8184A /* HelloCanadaAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19485D2206CB5C00F8184A /* HelloCanadaAPIManager.swift */; };
+		3D194861220743B000F8184A /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D194860220743B000F8184A /* HomeViewPresenter.swift */; };
 		3DE521222205EF5500CD70AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE521212205EF5500CD70AB /* AppDelegate.swift */; };
 		3DE521242205EF5500CD70AB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE521232205EF5500CD70AB /* HomeViewController.swift */; };
 		3DE521272205EF5500CD70AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE521252205EF5500CD70AB /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		3D1948582206C8B400F8184A /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		3D19485B2206CB2C00F8184A /* BaseAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIManager.swift; sourceTree = "<group>"; };
 		3D19485D2206CB5C00F8184A /* HelloCanadaAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCanadaAPIManager.swift; sourceTree = "<group>"; };
+		3D194860220743B000F8184A /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
 		3DE5211E2205EF5500CD70AB /* HelloCanada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCanada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE521212205EF5500CD70AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE521232205EF5500CD70AB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 		3D1948422206886200F8184A /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3D19485F2207438700F8184A /* Presenter */,
 				3D1948522206B08500F8184A /* Entity */,
 				3D1948512206B07C00F8184A /* ViewController */,
 			);
@@ -230,6 +233,14 @@
 				3D19485D2206CB5C00F8184A /* HelloCanadaAPIManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		3D19485F2207438700F8184A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3D194860220743B000F8184A /* HomeViewPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		3DE521152205EF5500CD70AB = {
@@ -528,6 +539,7 @@
 				3DE521222205EF5500CD70AB /* AppDelegate.swift in Sources */,
 				3D1948502206AD8600F8184A /* AboutCanadaResponse.swift in Sources */,
 				3D1948542206B0B600F8184A /* AboutCanada.swift in Sources */,
+				3D194861220743B000F8184A /* HomeViewPresenter.swift in Sources */,
 				3D19485E2206CB5C00F8184A /* HelloCanadaAPIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
