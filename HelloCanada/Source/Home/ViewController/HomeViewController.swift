@@ -12,6 +12,7 @@ class HomeViewController: UIViewController {
 
     // Declarations
     var tableView: UITableView?
+    var canadaDetails: AboutCanadaResponse?
 
     // MARK: - Life Cycle
     override func viewDidLoad() {
