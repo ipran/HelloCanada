@@ -15,13 +15,14 @@ class AboutCanadaTableViewCell: UITableViewCell {
     let titleLabel : UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.boldSystemFont(ofSize: 16.0)
         return label
     }()
 
     let descriptionLabel : UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.numberOfLines = 10
+        label.numberOfLines = 0
         return label
     }()
 
@@ -63,23 +64,24 @@ class AboutCanadaTableViewCell: UITableViewCell {
         descriptionImageView.snp.makeConstraints { (make) in
 
             make.top.equalTo(24)
-            make.left.equalTo(16)
-            make.width.equalTo(75)
-            make.height.equalTo(75)
+            make.center.equalTo(contentView)
+            make.width.equalTo(100)
+            make.height.equalTo(100)
+            make.bottom.equalTo(16)
         }
 
         titleLabel.snp.makeConstraints { (make) in
 
-            make.top.equalTo(24)
-            make.left.equalTo(descriptionImageView.snp.right).offset(16)
-//            make.right.equalTo(16)
+            make.top.equalTo(descriptionImageView.snp.bottom).offset(16)
+            make.center.equalTo(contentView)
         }
 
         descriptionLabel.snp.makeConstraints { (make) in
 
-            make.top.equalTo(titleLabel.snp.bottom).offset(8)
-            make.left.equalTo(descriptionImageView.snp.right).offset(16)
+            make.top.equalTo(titleLabel.snp.bottom).offset(16)
+            make.left.equalTo(16)
             make.right.equalTo(16)
+            make.bottom.equalTo(16)
         }
     }
 

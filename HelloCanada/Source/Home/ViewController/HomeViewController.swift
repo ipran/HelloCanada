@@ -84,6 +84,9 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource {
         }
         (cell as? AboutCanadaTableViewCell)?.titleLabel.text = aboutCanada.title
         (cell as? AboutCanadaTableViewCell)?.descriptionLabel.text = aboutCanada.description
+        if let imageURL = aboutCanada.imageHref {
+            (cell as? AboutCanadaTableViewCell)?.descriptionImageView.loadImageFrom(imageURL.url!)
+        }
         return cell
     }
 

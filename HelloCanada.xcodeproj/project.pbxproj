@@ -22,6 +22,8 @@
 		3D19486A22075AF700F8184A /* HomeViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19486922075AF700F8184A /* HomeViewInteractor.swift */; };
 		3D38D484220823D800CC24B4 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38D483220823D800CC24B4 /* Messages.swift */; };
 		3D38D487220850D900CC24B4 /* AboutCanadaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38D486220850D900CC24B4 /* AboutCanadaTableViewCell.swift */; };
+		3D4EDCD92208B6E50005B400 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4EDCD82208B6E50005B400 /* UIImageView.swift */; };
+		3D4EDCDB2208B8470005B400 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4EDCDA2208B8470005B400 /* String.swift */; };
 		3DE521222205EF5500CD70AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE521212205EF5500CD70AB /* AppDelegate.swift */; };
 		3DE521242205EF5500CD70AB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE521232205EF5500CD70AB /* HomeViewController.swift */; };
 		3DE521292205EF5700CD70AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE521282205EF5700CD70AB /* Assets.xcassets */; };
@@ -71,6 +73,8 @@
 		3D19486922075AF700F8184A /* HomeViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInteractor.swift; sourceTree = "<group>"; };
 		3D38D483220823D800CC24B4 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		3D38D486220850D900CC24B4 /* AboutCanadaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCanadaTableViewCell.swift; sourceTree = "<group>"; };
+		3D4EDCD82208B6E50005B400 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		3D4EDCDA2208B8470005B400 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		3DE5211E2205EF5500CD70AB /* HelloCanada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCanada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE521212205EF5500CD70AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE521232205EF5500CD70AB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +195,8 @@
 				3D1948472206901000F8184A /* UITableViewCell.swift */,
 				3D1948492206914200F8184A /* UICollectionViewCell.swift */,
 				3D19484B220692DA00F8184A /* URLRequest.swift */,
+				3D4EDCD82208B6E50005B400 /* UIImageView.swift */,
+				3D4EDCDA2208B8470005B400 /* String.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -574,6 +580,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D4EDCDB2208B8470005B400 /* String.swift in Sources */,
 				3D194864220748EE00F8184A /* HomeViewRouter.swift in Sources */,
 				3D38D484220823D800CC24B4 /* Messages.swift in Sources */,
 				3D19485C2206CB2C00F8184A /* BaseAPIManager.swift in Sources */,
@@ -584,6 +591,7 @@
 				3D19486A22075AF700F8184A /* HomeViewInteractor.swift in Sources */,
 				3D19484A2206914200F8184A /* UICollectionViewCell.swift in Sources */,
 				3D19484C220692DA00F8184A /* URLRequest.swift in Sources */,
+				3D4EDCD92208B6E50005B400 /* UIImageView.swift in Sources */,
 				3DE521222205EF5500CD70AB /* AppDelegate.swift in Sources */,
 				3D1948502206AD8600F8184A /* AboutCanadaResponse.swift in Sources */,
 				3D1948542206B0B600F8184A /* AboutCanada.swift in Sources */,
