@@ -35,12 +35,10 @@ protocol BaseAPIManager {
 
 extension BaseAPIManager {
 
-    typealias JSONTaskCompletionHandler = (Decodable?, APIError?) -> Void
-
     func fetch<T: Decodable>(with request: URLRequest, decode: @escaping (Decodable) -> T?, completion: @escaping (APIResponse<T, APIError>) -> Void) {
 
         // Send Request
-        Alamofire.request(request.url!, parameters: [String: Any](), encoding: JSONEncoding.default).validate().responseJSON { response in
+        Alamofire.request(request.url!, parameters: [String: Any](), encoding: JSONEncoding.default).validate().responseData { response in
 
             // Validate Response
             switch response.result {
@@ -51,6 +49,7 @@ extension BaseAPIManager {
                     do {
 
                         let genericModel = try JSONDecoder().decode(T.self, from: data)
+                        print(genericModel)
                         completion(.success(genericModel))
                     }
                     catch {

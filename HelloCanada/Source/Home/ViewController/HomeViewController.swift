@@ -35,13 +35,13 @@ class HomeViewController: UIViewController {
 
         tableView?.delegate = self as UITableViewDelegate
         tableView?.dataSource = self as UITableViewDataSource
-        tableView?.backgroundColor = UIColor.lightGray
+        tableView?.backgroundColor = UIColor.red
 
         let height = UIScreen.main.bounds.height
         let width = UIScreen.main.bounds.width
         tableView = UITableView(frame: CGRect(x: 0, y: 0, width: width, height: height))
-        tableView?.register(UITableViewCell.self, forCellReuseIdentifier: "AboutCanadaCell")
-        view.addSubview(tableView ?? UITableView())
+        tableView?.register(AboutCanadaTableViewCell.self, forCellReuseIdentifier: "AboutCanadaCell")
+        self.view.addSubview(tableView ?? UITableView())
 
         tableView?.tableFooterView = UIView(frame: CGRect.zero)
         self.navigationItem.title = canadaDetails?.title
@@ -61,6 +61,7 @@ extension HomeViewController: HomeViewProtocol {
     func showAPIError(message: String) {
         self.noResponseLabel?.isHidden = false
         self.noResponseLabel?.text = message
+        self.tableView?.reloadData()
 //        self.activityIndicatorView.stopAnimating()
     }
 }
@@ -79,7 +80,8 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource {
         guard let aboutCanada = canadaDetails?.rows?[indexPath.row] else {
             return cell
         }
-        (cell as? UITableViewCell)?.textLabel?.text = aboutCanada.title
+        (cell as? AboutCanadaTableViewCell)?.titleLabel?.text = "aboutCanada.title"
+        (cell as? AboutCanadaTableViewCell)?.descriptionLabel.text = aboutCanada.description
         return cell
     }
 
