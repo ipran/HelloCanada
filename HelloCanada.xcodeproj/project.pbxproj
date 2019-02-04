@@ -18,7 +18,9 @@
 		3D19485E2206CB5C00F8184A /* HelloCanadaAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19485D2206CB5C00F8184A /* HelloCanadaAPIManager.swift */; };
 		3D194861220743B000F8184A /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D194860220743B000F8184A /* HomeViewPresenter.swift */; };
 		3D194864220748EE00F8184A /* HomeViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D194863220748EE00F8184A /* HomeViewRouter.swift */; };
-		3D1948662207491500F8184A /* HomeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1948652207491500F8184A /* HomeViewProtocol.swift */; };
+		3D1948662207491500F8184A /* HomeViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1948652207491500F8184A /* HomeViewProtocols.swift */; };
+		3D19486A22075AF700F8184A /* HomeViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19486922075AF700F8184A /* HomeViewInteractor.swift */; };
+		3D38D484220823D800CC24B4 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38D483220823D800CC24B4 /* Messages.swift */; };
 		3DE521222205EF5500CD70AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE521212205EF5500CD70AB /* AppDelegate.swift */; };
 		3DE521242205EF5500CD70AB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE521232205EF5500CD70AB /* HomeViewController.swift */; };
 		3DE521272205EF5500CD70AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE521252205EF5500CD70AB /* Main.storyboard */; };
@@ -65,7 +67,9 @@
 		3D19485D2206CB5C00F8184A /* HelloCanadaAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCanadaAPIManager.swift; sourceTree = "<group>"; };
 		3D194860220743B000F8184A /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
 		3D194863220748EE00F8184A /* HomeViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRouter.swift; sourceTree = "<group>"; };
-		3D1948652207491500F8184A /* HomeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocol.swift; sourceTree = "<group>"; };
+		3D1948652207491500F8184A /* HomeViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocols.swift; sourceTree = "<group>"; };
+		3D19486922075AF700F8184A /* HomeViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInteractor.swift; sourceTree = "<group>"; };
+		3D38D483220823D800CC24B4 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		3DE5211E2205EF5500CD70AB /* HelloCanada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCanada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE521212205EF5500CD70AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE521232205EF5500CD70AB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 		3D1948422206886200F8184A /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3D19486822075ACC00F8184A /* Interactor */,
 				3D1948672207491B00F8184A /* Protocols */,
 				3D194862220748D200F8184A /* Router */,
 				3D19485F2207438700F8184A /* Presenter */,
@@ -175,6 +180,7 @@
 		3D19484322068B8D00F8184A /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				3D38D483220823D800CC24B4 /* Messages.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -260,9 +266,17 @@
 		3D1948672207491B00F8184A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				3D1948652207491500F8184A /* HomeViewProtocol.swift */,
+				3D1948652207491500F8184A /* HomeViewProtocols.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3D19486822075ACC00F8184A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3D19486922075AF700F8184A /* HomeViewInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		3DE521152205EF5500CD70AB = {
@@ -552,17 +566,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D194864220748EE00F8184A /* HomeViewRouter.swift in Sources */,
+				3D38D484220823D800CC24B4 /* Messages.swift in Sources */,
 				3D19485C2206CB2C00F8184A /* BaseAPIManager.swift in Sources */,
 				3DE521242205EF5500CD70AB /* HomeViewController.swift in Sources */,
 				3D1948572206B24100F8184A /* Endpoint.swift in Sources */,
 				3D1948482206901000F8184A /* UITableViewCell.swift in Sources */,
 				3D1948592206C8B400F8184A /* APIResponse.swift in Sources */,
+				3D19486A22075AF700F8184A /* HomeViewInteractor.swift in Sources */,
 				3D19484A2206914200F8184A /* UICollectionViewCell.swift in Sources */,
 				3D19484C220692DA00F8184A /* URLRequest.swift in Sources */,
 				3DE521222205EF5500CD70AB /* AppDelegate.swift in Sources */,
 				3D1948502206AD8600F8184A /* AboutCanadaResponse.swift in Sources */,
 				3D1948542206B0B600F8184A /* AboutCanada.swift in Sources */,
-				3D1948662207491500F8184A /* HomeViewProtocol.swift in Sources */,
+				3D1948662207491500F8184A /* HomeViewProtocols.swift in Sources */,
 				3D194861220743B000F8184A /* HomeViewPresenter.swift in Sources */,
 				3D19485E2206CB5C00F8184A /* HelloCanadaAPIManager.swift in Sources */,
 			);

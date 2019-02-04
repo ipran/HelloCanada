@@ -16,15 +16,22 @@ protocol HomeViewProtocol: class {
 
 protocol HomeViewPresenterProtocol: class {
     //VIEW -> PRESENTER
-    var interactor: HomeViewInteractorProtocol? {get set}
+    var interactor: HomeViewInputInteractorProtocol? {get set}
     var view: HomeViewProtocol? {get set}
     var router: HomeViewRouterProtocol? {get set}
     func viewDidLoad()
 }
 
-protocol HomeViewInteractorProtocol: class {
+protocol HomeViewInputInteractorProtocol: class {
+    var presenter: HomeViewOutputInteractorProtocol? {get set}
     //PRESENTER -> INTERACTOR
     func fetchAboutCanadaDetails()
+}
+
+protocol HomeViewOutputInteractorProtocol: class {
+    //Interactor -> Presenter
+    func aboutCanadaListDidFetch(aboutCanada: AboutCanadaResponse?)
+    func aboutCanadaListDidFetchFailed(error: Error?)
 }
 
 protocol HomeViewRouterProtocol: class {
