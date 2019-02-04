@@ -22,15 +22,6 @@ class AboutCanadaTableViewCell: UITableViewCell {
 
     func setUpView() {
 
-        //setup title label
-        titleLabel = UILabel(frame: CGRect(x: 16, y: 8, width: self.frame.width, height: 44))
-        self.addSubview(titleLabel)
-        //setup description label
-        descriptionLabel = UILabel(frame: CGRect(x: 16, y: 8, width: self.frame.width, height: 44))
-        self.addSubview(descriptionLabel)
-        //setup imageview
-        descriptionImageView = UIImageView(frame: CGRect(x: 16, y: 16, width: 50, height: 50))
-        self.addSubview(descriptionImageView)
     }
 
 }

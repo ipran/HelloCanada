@@ -46,11 +46,22 @@ extension BaseAPIManager {
             case .success:
 
                 if let data = response.data {
+
+
                     do {
 
-                        let genericModel = try JSONDecoder().decode(T.self, from: data)
-                        print(genericModel)
-                        completion(.success(genericModel))
+                        if isCompatableWithUtf8(data) {
+
+                            let genericModel = try JSONDecoder().decode(T.self, from: data)
+                            completion(.success(genericModel))
+                        } else {
+
+                            if let updatedData = convertDataToUtf8Compatable(data) {
+
+                                let genericModel = try JSONDecoder().decode(T.self, from: updatedData)
+                                completion(.success(genericModel))
+                            }
+                        }
                     }
                     catch {
 
@@ -69,4 +80,27 @@ extension BaseAPIManager {
 
         }
     }
+}
+
+
+
+
+func isCompatableWithUtf8(_ data: Data) -> Bool {
+
+    if let _ = String(data: data, encoding: String.Encoding.utf8) {
+
+        return true
+    }
+    return false
+}
+
+
+
+func convertDataToUtf8Compatable(_ data: Data) -> Data? {
+
+    if let incoming = String(data: data, encoding: String.Encoding.ascii) {
+
+        return incoming.data(using: .utf8)
+    }
+    return nil
 }

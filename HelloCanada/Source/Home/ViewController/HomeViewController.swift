@@ -11,8 +11,12 @@ import UIKit
 class HomeViewController: UIViewController {
 
     // Declarations
-    var tableView: UITableView?
-    var noResponseLabel: UILabel?
+    let tableView : UITableView = {
+        let homeTableView = UITableView()
+        homeTableView.translatesAutoresizingMaskIntoConstraints = false
+        return homeTableView
+    }()
+    var noResponseLabel: UILabel!
     var canadaDetails: AboutCanadaResponse?
     var presentor:HomeViewPresenterProtocol?
 
@@ -22,8 +26,7 @@ class HomeViewController: UIViewController {
 
         HomeViewRouter.createHomeViewModule(homeViewRef: self)
         setUpView()
-        // Show activity indicator
-//        activityIndicatorView.startAnimating()
+        // activityIndicatorView.startAnimating()
         presentor?.viewDidLoad()
     }
 
@@ -33,18 +36,17 @@ class HomeViewController: UIViewController {
 
     func setUpTableView() {
 
-        tableView?.delegate = self as UITableViewDelegate
-        tableView?.dataSource = self as UITableViewDataSource
-        tableView?.backgroundColor = UIColor.red
+        view.addSubview(tableView)
 
-        let height = UIScreen.main.bounds.height
-        let width = UIScreen.main.bounds.width
-        tableView = UITableView(frame: CGRect(x: 0, y: 0, width: width, height: height))
-        tableView?.register(AboutCanadaTableViewCell.self, forCellReuseIdentifier: "AboutCanadaCell")
-        self.view.addSubview(tableView ?? UITableView())
+        tableView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0.0).isActive = true
+        tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0.0).isActive = true
+        tableView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0.0).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0.0).isActive = true
 
-        tableView?.tableFooterView = UIView(frame: CGRect.zero)
-        self.navigationItem.title = canadaDetails?.title
+        tableView.delegate = self
+        tableView.dataSource = self
+
+        tableView.register(AboutCanadaTableViewCell.self, forCellReuseIdentifier: "AboutCanadaCell")
     }
 }
 
@@ -52,17 +54,17 @@ class HomeViewController: UIViewController {
 extension HomeViewController: HomeViewProtocol {
 
     func showCountryDetails(forTheCountry canada: AboutCanadaResponse) {
-        self.noResponseLabel?.isHidden = true
-        self.canadaDetails = canada
-//        self.activityIndicatorView.stopAnimating()
-        self.tableView?.reloadData()
+        noResponseLabel?.isHidden = true
+        canadaDetails = canada
+        // activityIndicatorView.stopAnimating()
+        navigationItem.title = canadaDetails?.title
+        tableView.reloadData()
     }
 
     func showAPIError(message: String) {
-        self.noResponseLabel?.isHidden = false
-        self.noResponseLabel?.text = message
-        self.tableView?.reloadData()
-//        self.activityIndicatorView.stopAnimating()
+        noResponseLabel?.isHidden = false
+        noResponseLabel?.text = message
+        // activityIndicatorView.stopAnimating()
     }
 }
 
@@ -77,11 +79,11 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "AboutCanadaCell", for: indexPath)
-        guard let aboutCanada = canadaDetails?.rows?[indexPath.row] else {
-            return cell
-        }
-        (cell as? AboutCanadaTableViewCell)?.titleLabel?.text = "aboutCanada.title"
-        (cell as? AboutCanadaTableViewCell)?.descriptionLabel.text = aboutCanada.description
+//        guard let aboutCanada = canadaDetails?.rows?[indexPath.row] else {
+//            return cell
+//        }
+//        (cell as? AboutCanadaTableViewCell)?.titleLabel?.text = aboutCanada.title
+//        (cell as? AboutCanadaTableViewCell)?.descriptionLabel.text = aboutCanada.description
         return cell
     }
 
