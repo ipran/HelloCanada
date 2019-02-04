@@ -79,17 +79,17 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "AboutCanadaCell", for: indexPath)
-//        guard let aboutCanada = canadaDetails?.rows?[indexPath.row] else {
-//            return cell
-//        }
-//        (cell as? AboutCanadaTableViewCell)?.titleLabel?.text = aboutCanada.title
-//        (cell as? AboutCanadaTableViewCell)?.descriptionLabel.text = aboutCanada.description
+        guard let aboutCanada = canadaDetails?.rows?[indexPath.row] else {
+            return cell
+        }
+        (cell as? AboutCanadaTableViewCell)?.titleLabel.text = aboutCanada.title
+        (cell as? AboutCanadaTableViewCell)?.descriptionLabel.text = aboutCanada.description
         return cell
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 
-        return 150
+        return UITableView.automaticDimension
     }
 
 }
