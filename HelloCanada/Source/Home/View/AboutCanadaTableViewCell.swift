@@ -15,6 +15,7 @@ class AboutCanadaTableViewCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.boldSystemFont(ofSize: 16.0)
+        label.textAlignment = .center
         return label
     }()
 
@@ -22,6 +23,7 @@ class AboutCanadaTableViewCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
+        label.textAlignment = .left
         return label
     }()
 
@@ -48,30 +50,32 @@ class AboutCanadaTableViewCell: UITableViewCell {
     }
 
     func setUpView() {
-        contentView.addSubview(titleLabel)
-        contentView.addSubview(descriptionLabel)
-        contentView.addSubview(descriptionImageView)
+        addSubview(titleLabel)
+        addSubview(descriptionLabel)
+        addSubview(descriptionImageView)
 
         setUILayout()
     }
 
     func setUILayout() {
         descriptionImageView.snp.makeConstraints { (make) in
-            make.top.equalTo(16)
-            make.centerX.equalTo(contentView)
+            make.top.equalTo(self).offset(16)
+            make.centerX.equalTo(self)
             make.width.equalTo(100)
             make.height.equalTo(100)
         }
 
         titleLabel.snp.makeConstraints { (make) in
             make.top.equalTo(descriptionImageView.snp.bottom).offset(8)
-            make.center.equalTo(contentView)
+            make.leading.equalTo(self).offset(16)
+            make.trailing.equalTo(self).inset(16)
         }
 
         descriptionLabel.snp.makeConstraints { (make) in
             make.top.equalTo(titleLabel.snp.bottom).offset(8)
-            make.left.equalTo(16)
-            make.right.equalTo(16)
+            make.leading.equalTo(self).offset(16)
+            make.trailing.equalTo(self).inset(16)
+            make.bottom.equalTo(self).inset(16)
         }
     }
 }

@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
 
         HomeViewRouter.createHomeViewModule(homeViewRef: self)
         setUpView()
-        // activityIndicatorView.startAnimating()
+        showActivityIndicator()
         presentor?.viewDidLoad()
     }
 
@@ -56,7 +56,7 @@ extension HomeViewController: HomeViewProtocol {
     func showCountryDetails(forTheCountry canada: AboutCanadaResponse) {
         noResponseLabel?.isHidden = true
         canadaDetails = canada
-        // activityIndicatorView.stopAnimating()
+        hideActivityIndicator()
         navigationItem.title = canadaDetails?.title
         tableView.reloadData()
     }
@@ -64,7 +64,8 @@ extension HomeViewController: HomeViewProtocol {
     func showAPIError(message: String) {
         noResponseLabel?.isHidden = false
         noResponseLabel?.text = message
-        // activityIndicatorView.stopAnimating()
+        hideActivityIndicator()
+        self.view.showToast(message)
     }
 }
 
@@ -76,20 +77,25 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AboutCanadaCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AboutCanadaCell", for: indexPath) as! AboutCanadaTableViewCell
         guard let aboutCanada = canadaDetails?.rows?[indexPath.row] else {
             return cell
         }
-        (cell as? AboutCanadaTableViewCell)?.titleLabel.text = aboutCanada.title
-        (cell as? AboutCanadaTableViewCell)?.descriptionLabel.text = aboutCanada.description
+        cell.titleLabel.text = aboutCanada.title
+        cell.descriptionLabel.text = aboutCanada.description
         if let imageURL = aboutCanada.imageHref {
-            (cell as? AboutCanadaTableViewCell)?.descriptionImageView.loadImageFrom(imageURL.url!)
+            cell.descriptionImageView.loadImageFrom(imageURL.url!)
+        } else {
+            cell.descriptionImageView.image = #imageLiteral(resourceName: "no_image")
         }
         return cell
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
-//        return 300
+    }
+
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
 }

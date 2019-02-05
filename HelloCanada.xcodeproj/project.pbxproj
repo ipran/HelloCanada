@@ -21,6 +21,9 @@
 		3D1948662207491500F8184A /* HomeViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1948652207491500F8184A /* HomeViewProtocols.swift */; };
 		3D19486A22075AF700F8184A /* HomeViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19486922075AF700F8184A /* HomeViewInteractor.swift */; };
 		3D1AB523220926D2009E0D80 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1AB522220926D2009E0D80 /* APITests.swift */; };
+		3D2191E422096B5800210049 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2191E322096B5800210049 /* UIViewController.swift */; };
+		3D2191E622096C0D00210049 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2191E522096C0D00210049 /* Utils.swift */; };
+		3D2191E822096F9D00210049 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2191E722096F9D00210049 /* UIView.swift */; };
 		3D38D484220823D800CC24B4 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38D483220823D800CC24B4 /* Messages.swift */; };
 		3D38D487220850D900CC24B4 /* AboutCanadaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38D486220850D900CC24B4 /* AboutCanadaTableViewCell.swift */; };
 		3D4EDCD92208B6E50005B400 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4EDCD82208B6E50005B400 /* UIImageView.swift */; };
@@ -73,6 +76,9 @@
 		3D1948652207491500F8184A /* HomeViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocols.swift; sourceTree = "<group>"; };
 		3D19486922075AF700F8184A /* HomeViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInteractor.swift; sourceTree = "<group>"; };
 		3D1AB522220926D2009E0D80 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
+		3D2191E322096B5800210049 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		3D2191E522096C0D00210049 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		3D2191E722096F9D00210049 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		3D38D483220823D800CC24B4 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		3D38D486220850D900CC24B4 /* AboutCanadaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCanadaTableViewCell.swift; sourceTree = "<group>"; };
 		3D4EDCD82208B6E50005B400 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
@@ -187,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				3D38D483220823D800CC24B4 /* Messages.swift */,
+				3D2191E522096C0D00210049 /* Utils.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -199,6 +206,8 @@
 				3D19484B220692DA00F8184A /* URLRequest.swift */,
 				3D4EDCD82208B6E50005B400 /* UIImageView.swift */,
 				3D4EDCDA2208B8470005B400 /* String.swift */,
+				3D2191E322096B5800210049 /* UIViewController.swift */,
+				3D2191E722096F9D00210049 /* UIView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -522,15 +531,19 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HelloCanada/Pods-HelloCanada-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/UIActivityIndicator-for-SDWebImage/UIActivityIndicator_for_SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIActivityIndicator_for_SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -601,6 +614,7 @@
 			files = (
 				3D4EDCDB2208B8470005B400 /* String.swift in Sources */,
 				3D194864220748EE00F8184A /* HomeViewRouter.swift in Sources */,
+				3D2191E822096F9D00210049 /* UIView.swift in Sources */,
 				3D38D484220823D800CC24B4 /* Messages.swift in Sources */,
 				3D19485C2206CB2C00F8184A /* BaseAPIManager.swift in Sources */,
 				3DE521242205EF5500CD70AB /* HomeViewController.swift in Sources */,
@@ -613,8 +627,10 @@
 				3D4EDCD92208B6E50005B400 /* UIImageView.swift in Sources */,
 				3DE521222205EF5500CD70AB /* AppDelegate.swift in Sources */,
 				3D1948502206AD8600F8184A /* AboutCanadaResponse.swift in Sources */,
+				3D2191E422096B5800210049 /* UIViewController.swift in Sources */,
 				3D1948542206B0B600F8184A /* AboutCanada.swift in Sources */,
 				3D1948662207491500F8184A /* HomeViewProtocols.swift in Sources */,
+				3D2191E622096C0D00210049 /* Utils.swift in Sources */,
 				3D194861220743B000F8184A /* HomeViewPresenter.swift in Sources */,
 				3D38D487220850D900CC24B4 /* AboutCanadaTableViewCell.swift in Sources */,
 				3D19485E2206CB5C00F8184A /* HelloCanadaAPIManager.swift in Sources */,

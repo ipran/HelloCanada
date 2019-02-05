@@ -25,9 +25,7 @@ enum APIError: Error {
         case .jsonParsingFailure: return "JSON Parsing Failure"
         case .jsonConversionFailure: return "JSON Conversion Failure"
         }
-
     }
-
 }
 
 protocol BaseAPIManager {
@@ -65,7 +63,6 @@ extension BaseAPIManager {
 
             case .failure:
                 completion(APIResponse.failiure(APIError.requestFailed))
-                return
             }
         }
     }
