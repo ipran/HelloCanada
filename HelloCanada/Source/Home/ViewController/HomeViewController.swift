@@ -72,12 +72,10 @@ extension HomeViewController: HomeViewProtocol {
 extension HomeViewController:UITableViewDelegate,UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
         return canadaDetails?.rows?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
         let cell = tableView.dequeueReusableCell(withIdentifier: "AboutCanadaCell", for: indexPath)
         guard let aboutCanada = canadaDetails?.rows?[indexPath.row] else {
             return cell
@@ -91,8 +89,7 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-
         return UITableView.automaticDimension
+//        return 300
     }
-
 }

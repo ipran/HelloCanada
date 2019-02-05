@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 struct Messages {
-
     static let somethingWentWrong = "Something went wrong!"
     static let noDetailsFound = "No Details found!"
 }

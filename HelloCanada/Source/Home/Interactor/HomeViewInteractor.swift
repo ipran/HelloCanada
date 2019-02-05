@@ -9,7 +9,7 @@
 import Foundation
 
 class HomeViewInteractor: HomeViewInputInteractorProtocol {
-
+    // Declarations
     weak var presenter: HomeViewOutputInteractorProtocol?
     var apiManager = HelloCanadaAPIManager()
 
@@ -32,5 +32,4 @@ class HomeViewInteractor: HomeViewInputInteractorProtocol {
             }
         }
     }
-
 }

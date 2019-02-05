@@ -9,10 +9,8 @@
 import Foundation
 
 extension String {
-
     // Convert as URL
     var url: URL? {
-
         return URL(string: self)
     }
 }

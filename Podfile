@@ -9,6 +9,8 @@ target 'HelloCanada' do
     pod 'Alamofire', '~> 4.4'
     pod 'UIActivityIndicator-for-SDWebImage'
     pod 'SnapKit', '~> 4.0.0'
+    pod 'NVActivityIndicatorView'
+    pod 'Toast-Swift'
 
   target 'HelloCanadaTests' do
     inherit! :search_paths

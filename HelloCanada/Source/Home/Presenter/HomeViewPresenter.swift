@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class HomeViewPresenter:HomeViewPresenterProtocol,HomeViewOutputInteractorProtocol {
-
+    // Declarations
     var view: HomeViewProtocol?
     var router: HomeViewRouterProtocol?
     var interactor: HomeViewInputInteractorProtocol?

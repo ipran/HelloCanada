@@ -11,7 +11,6 @@ import UIKit
 import SDWebImage
 
 extension UIImageView{
-
     /*
      Load Images Asynchronusly - Support Assessment Controller Views
      Activity indicator color did set on UIImageView+WebCache - line number 177
@@ -21,7 +20,7 @@ extension UIImageView{
         self.setIndicatorStyle(.whiteLarge)
         self.sd_setImage(with: url, placeholderImage: #imageLiteral(resourceName: "loading"), options: SDWebImageOptions.refreshCached, completed: { (image, error, cacheType, url) in
             if let _ =  error {
-                self.image = #imageLiteral(resourceName: "IMG_1054")
+                self.image = #imageLiteral(resourceName: "no_image")
             }
         })
     }

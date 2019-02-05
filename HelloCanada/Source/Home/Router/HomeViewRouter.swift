@@ -9,7 +9,6 @@
 import Foundation
 
 class HomeViewRouter: HomeViewRouterProtocol {
-
     /**
      Assemble home module
      */

@@ -10,7 +10,6 @@ import UIKit
 import SnapKit
 
 class AboutCanadaTableViewCell: UITableViewCell {
-
     // Declarations
     let titleLabel : UILabel = {
         let label = UILabel()
@@ -35,11 +34,9 @@ class AboutCanadaTableViewCell: UITableViewCell {
     // MARK: - Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
-
     }
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.selectionStyle = .none
 
@@ -51,7 +48,6 @@ class AboutCanadaTableViewCell: UITableViewCell {
     }
 
     func setUpView() {
-
         contentView.addSubview(titleLabel)
         contentView.addSubview(descriptionLabel)
         contentView.addSubview(descriptionImageView)
@@ -60,29 +56,22 @@ class AboutCanadaTableViewCell: UITableViewCell {
     }
 
     func setUILayout() {
-
         descriptionImageView.snp.makeConstraints { (make) in
-
-            make.top.equalTo(24)
-            make.center.equalTo(contentView)
+            make.top.equalTo(16)
+            make.centerX.equalTo(contentView)
             make.width.equalTo(100)
             make.height.equalTo(100)
-            make.bottom.equalTo(16)
         }
 
         titleLabel.snp.makeConstraints { (make) in
-
-            make.top.equalTo(descriptionImageView.snp.bottom).offset(16)
+            make.top.equalTo(descriptionImageView.snp.bottom).offset(8)
             make.center.equalTo(contentView)
         }
 
         descriptionLabel.snp.makeConstraints { (make) in
-
-            make.top.equalTo(titleLabel.snp.bottom).offset(16)
+            make.top.equalTo(titleLabel.snp.bottom).offset(8)
             make.left.equalTo(16)
             make.right.equalTo(16)
-            make.bottom.equalTo(16)
         }
     }
-
 }
