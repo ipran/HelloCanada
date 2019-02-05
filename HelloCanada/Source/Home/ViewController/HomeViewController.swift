@@ -11,6 +11,7 @@ import UIKit
 class HomeViewController: UIViewController {
 
     // Declarations
+    var refreshControl : UIRefreshControl!
     let tableView : UITableView = {
         let homeTableView = UITableView()
         homeTableView.translatesAutoresizingMaskIntoConstraints = false
@@ -39,6 +40,7 @@ class HomeViewController: UIViewController {
     func setUpView() {
         setUpTableView()
         setUpNoResponseLabel()
+        configureRefreshController()
     }
 
     func setUpNoResponseLabel() {
@@ -66,6 +68,22 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
 
         tableView.register(AboutCanadaTableViewCell.self, forCellReuseIdentifier: "AboutCanadaCell")
+    }
+
+    func configureRefreshController() {
+        refreshControl = UIRefreshControl()
+        refreshControl.tintColor = .black
+        refreshControl.addTarget(self, action: #selector(HomeViewController.refreshData), for: .valueChanged)
+        tableView.refreshControl = refreshControl
+    }
+}
+
+// MARK: - Genral Events
+extension HomeViewController {
+    @objc func refreshData() {
+        refreshControl.endRefreshing()
+        showActivityIndicator()
+        presentor?.viewDidLoad()
     }
 }
 

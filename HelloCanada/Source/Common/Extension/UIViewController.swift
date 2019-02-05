@@ -13,12 +13,13 @@ import NVActivityIndicatorView
 extension UIViewController: NVActivityIndicatorViewable {
     // Support Activity indicator
     func showActivityIndicator() {
-        self.view.addSubview(activityIndicator)
-        activityIndicator.startAnimating()
+        DispatchQueue.main.async {
+            self.view.addSubview(activityIndicator)
+            activityIndicator.startAnimating()
+        }
     }
 
     func hideActivityIndicator() {
-
         activityIndicator.stopAnimating()
     }
 }

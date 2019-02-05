@@ -39,6 +39,6 @@ var activityIndicator : NVActivityIndicatorView = {
     let x = (UIScreen.main.bounds.width * 0.5) - (indicatorSize * 0.5)
     let y = (UIScreen.main.bounds.height * 0.4) - (indicatorSize * 0.5)
     let frame = CGRect(x: x, y: y, width: indicatorSize, height: indicatorSize)
-    let indicator = NVActivityIndicatorView(frame: frame, type: NVActivityIndicatorType.ballBeat, color: .white, padding: 0)
+    let indicator = NVActivityIndicatorView(frame: frame, type: NVActivityIndicatorType.ballBeat, color: UIColor.black, padding: 0)
     return indicator
 }()
