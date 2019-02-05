@@ -10,19 +10,16 @@ import Foundation
 
 protocol EndPoint {
     var base: String { get }
-//    var path: String { get }
     var method: HTTPMethod {get}
 }
 
 extension EndPoint {
-
     var apiKey: String {
         return ""
     }
 
     var urlComponents: URLComponents {
         var components = URLComponents(string: base)!
-//        components.path = path
         components.query = apiKey
         return components
     }
@@ -40,7 +37,6 @@ enum AboutCanadaFeed {
 }
 
 extension AboutCanadaFeed: EndPoint {
-
     var method: HTTPMethod {
         return .get
     }
@@ -48,13 +44,5 @@ extension AboutCanadaFeed: EndPoint {
     var base: String {
         return "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"
     }
-
-//    var path: String {
-//        switch self {
-//
-//        case .aboutCanada:
-//            return ""
-//        }
-//    }
 }
 

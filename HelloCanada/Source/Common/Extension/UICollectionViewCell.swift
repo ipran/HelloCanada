@@ -12,7 +12,6 @@ import UIKit
 extension UICollectionViewCell {
     // Get CollectionViewCell Identifier
     static var identifier: String {
-
         return String(describing: self).components(separatedBy: ".").last!
     }
 }
