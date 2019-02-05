@@ -16,7 +16,13 @@ class HomeViewController: UIViewController {
         homeTableView.translatesAutoresizingMaskIntoConstraints = false
         return homeTableView
     }()
-    var noResponseLabel: UILabel!
+    let noResponseLabel : UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.boldSystemFont(ofSize: 16.0)
+        label.textAlignment = .center
+        return label
+    }()
     var canadaDetails: AboutCanadaResponse?
     var presentor:HomeViewPresenterProtocol?
 
@@ -32,16 +38,29 @@ class HomeViewController: UIViewController {
 
     func setUpView() {
         setUpTableView()
+        setUpNoResponseLabel()
+    }
+
+    func setUpNoResponseLabel() {
+        view.addSubview(noResponseLabel)
+
+        noResponseLabel.snp.makeConstraints { (make) in
+            make.center.equalTo(tableView)
+            make.centerY.equalTo(tableView)
+            make.left.equalTo(tableView)
+            make.right.equalTo(tableView)
+        }
     }
 
     func setUpTableView() {
-
         view.addSubview(tableView)
 
-        tableView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0.0).isActive = true
-        tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0.0).isActive = true
-        tableView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0.0).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0.0).isActive = true
+        tableView.snp.makeConstraints { (make) in
+            make.left.equalTo(view)
+            make.right.equalTo(view)
+            make.bottom.equalTo(view)
+            make.top.equalTo(view)
+        }
 
         tableView.delegate = self
         tableView.dataSource = self
@@ -52,20 +71,23 @@ class HomeViewController: UIViewController {
 
 // MARK: - Presenter Protocols
 extension HomeViewController: HomeViewProtocol {
-
+    
     func showCountryDetails(forTheCountry canada: AboutCanadaResponse) {
-        noResponseLabel?.isHidden = true
+        noResponseLabel.isHidden = true
         canadaDetails = canada
         hideActivityIndicator()
         navigationItem.title = canadaDetails?.title
+        tableView.separatorStyle = .singleLine
         tableView.reloadData()
     }
 
     func showAPIError(message: String) {
-        noResponseLabel?.isHidden = false
-        noResponseLabel?.text = message
+        tableView.separatorColor = UIColor.clear
+        tableView.setNeedsDisplay()
+        noResponseLabel.isHidden = false
+        noResponseLabel.text = Messages.noDetailsFound
         hideActivityIndicator()
-        self.view.showToast(message)
+        self.view.showToast(Messages.noDetailsFound)
     }
 }
 

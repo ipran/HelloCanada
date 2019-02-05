@@ -23,7 +23,7 @@ class AboutCanadaTableViewCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
-        label.textAlignment = .left
+        label.textAlignment = .center 
         return label
     }()
 
